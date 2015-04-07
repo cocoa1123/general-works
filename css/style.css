@@ -1,0 +1,33 @@
+	table, th, td {
+        border: none;
+        font-family:Arial;
+        }
+        table {
+        border-collapse:collapse;
+		width:700px;
+        }
+        thead {
+        color:white;
+        background-color:#4fc618;
+        height:50px;
+        }
+        th {
+        font-weight:300;
+        text-align:left;
+        padding: 5px 40px 5px 10px;
+        }
+        td {
+        padding: 5px 40px 5px 10px;
+        }
+		.unchecked: disabled; {
+		border: 1px;
+        border-width:20px;	
+        border-style:inset;
+        }
+        .chechked: enabled {
+        border-width:20px;	
+        border-style:inset;
+        }
+        .greyBackground {
+        background-color:rgba(233, 231, 231, 0.69);
+        }

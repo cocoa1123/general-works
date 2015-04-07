@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<title>NestedLists</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("li").click(function() {
+			$(".nested").animate({
+				"font-size" : "toggle"}, 1000, function() {
+				$(".nested").fadeOut(5000, function(){
+					$(".nested").fadeIn(5000);
+				}); 
+			});
+		});
+	});
+</script>
+
+</head>
+<body>
+	<header>
+		<p>Preceding Text</p>
+	</header>
+	<section>			
+		<ol type="I">
+			<li>List item 1
+				<ol type="a">
+					<li class="nested">Nested item 1.1</li> 
+					<li class="nested">Nested item 1.2</li>
+				</ol>
+			</li>	
+			<li>List item 2
+				<ol type="1">
+					<li class="nested">Nested item 2.1</li>
+					<li class="nested">Nested item 2.2
+						<ul type="circle">
+							<li class="nested">Nested item 2.2.1</li>
+							<li class="nested">Nested item 2.2.2
+								<ul type="disc">
+									<li class="nested">Nested item 2.2.2.1</li>
+									<li class="nested">Nested item 2.2.2.2</li>
+								</ul>
+							</li>	
+							<li class="nested">Nested item 2.2.3</li>
+						</ul>
+					</li>	
+					<li class="nested">Nested item 2.3</li>
+				</ol>
+			</li>
+			<li>List item 3
+				<ul type="disc">
+					<li class="nested">Nested item 3.1</li>
+					<li class="nested">Nested item 3.1</li>
+					<li class="nested">Nested item 3.1</li>
+				</ul>
+			</li>
+		</ol>
+		<p><em>Note: When you click on any list item, nested items starts to fade out and then fades in and so on...</em></p>
+	</section>
+</body>
+</html>
