@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Borders</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+			$(document).ready(function (){
+				$(".green").click(function () {
+					$(".purple").slideToggle(1500);
+				});
+			});
+	</script>
+		
+    <style>
+        .green {
+        border: 5px solid #000600;
+        margin: 50px 300px;
+        outline: 30px inset rgba(65, 215, 14, 0.70);
+        text-align: center;
+		font-size: 25px;
+        padding: 50px;
+        }
+
+        .purple {
+		width: 400px;
+        border: 15px groove #D683FF;
+        margin: 50px 410px;
+        text-align: center;
+		font-size: 20px;
+        padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="green">
+        Border with Inset Outline! <br><br>
+		Click me few times to see the Slide Toggle Effect.
+        </div>
+
+    <div class="purple">
+        Groove border!
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#size").click(function(){
+			$("h1").animate({fontSize: '50px'});
+		});
+		$("#size").click(function(){
+			$("#moveRight").animate({
+			left: '250px',
+			height: '200px',
+			width: '200px'
+			});
+		});
+	});
+</script>
+<style>
+div {
+	width: 250px;
+	height: 150px;
+}
+</style>
+</head>
+
+<body>
+	<h1 class="hidden">This is a Example with jQuery Effect.</h1>
+	
+	<div class="hidden">
+		<p>Love refers to a variety of different feelings, states, and attitudes that ranges from interpersonal affection 
+			to pleasure ("I loved that meal"). It can refer to an emotion of a strong attraction and 
+			personal attachment.
+		</p>
+	</div>
+	
+	<img id="moveRight" src="images/PANO_2014.jpg" alt="beach" width="300px" height="300px"/>
+	
+	<br><br>
+	
+	<button id="size"> Resize </button>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
